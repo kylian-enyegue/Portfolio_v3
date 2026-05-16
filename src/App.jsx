@@ -2,6 +2,7 @@ import Sidebar from './components/Sidebar'
 import isepLogo from './assets/img/Institut_supérieur_d_électronique_de_Paris.png'
 import juniorIsepLogo from './assets/img/Junior-ISEP.png'
 import garageIsepLogo from './assets/img/garageisep.png'
+import gmitixImg from './assets/img/gmitix.png'
 import pythonLogo from './assets/img/Python-logo.png'
 import javaLogo from './assets/img/java-logo.png'
 import cppLogo from './assets/img/c++-logo.png'
@@ -106,6 +107,7 @@ function App() {
         </section>
         <section id="skills">
           <h1 className="section-title">Skills</h1>
+          <h2 className="subsection-title subsection-title--right">Langages que je maîtrise</h2>
           <div className="skills-grid">
             {skills.map((skill) => (
               <div className="skill-card" key={skill.name}>
@@ -116,12 +118,46 @@ function App() {
           </div>
         </section>
         <section id="projets">
-          <h1>Projets</h1>
-        </section>
-        <section id="contact">
-          <h1>Contact</h1>
+          <h1 className="section-title">Projets</h1>
+          <div className="projects-grid">
+            {[...Array(9)].map((_, i) => (
+              <div className="project-card" key={i}>
+                <div className="project-left">
+                  <img src={gmitixImg} alt="PWA transcription" />
+                  <div className="project-techstack">
+                    <span>Tech Utilisées :</span>
+                    <div className="project-techstack-icons">
+                      <i className="fi fi-brands-java"></i>
+                      <i className="fi fi-tr-react"></i>
+                      <i className="fi fi-brands-gitlab"></i>
+                      <i className="fi fi-ss-sql-server"></i>
+                    </div>
+                  </div>
+                </div>
+                <div className="project-info">
+                  <h3>PWA de transcription automatique de réunions</h3>
+                  <p>Cette application web progressive automatise la gestion complète des réunions. Elle planifie les sessions, suit leur avancement et gère des templates de comptes-rendus. L'IA transcrit les enregistrements audio et génère un document Word synchronisé avec Google Meet.</p>
+                </div>
+              </div>
+            ))}
+          </div>
         </section>
       </main>
+
+      <footer id="contact">
+        <h2>Contact</h2>
+        <div className="footer-links">
+          <a href="mailto:kylian.enyeguemvodo@gmail.com">
+            <i className="fi fi-sr-envelope"></i>
+            kylian.enyeguemvodo@gmail.com
+          </a>
+          <a href="tel:+33601615351">
+            <i className="fi fi-sr-phone-call"></i>
+            +(33) 6 01 61 53 51
+          </a>
+        </div>
+        <p className="footer-copy">Ce site a été conçu et développé avec ReactJS — Tous droits réservés</p>
+      </footer>
     </>
   )
 }
