@@ -190,7 +190,7 @@ function App() {
               </div>
               <div className="project-info">
                 <h3>Plateforme de location étudiante</h3>
-                <p>Cette plateforme web regroupe la recherche et la publication de logements étudiants. Elle propose des filtres dynamiques, une carte interactive via Google Maps, un système de messagerie entre utilisateurs, la gestion complète des annonces, un formulaire d'inscription de connexion et une récupération de compte sécurisée.</p>
+                <p style={{ textAlign: 'left' }}>Cette plateforme web centralise la recherche et publication de logements étudiants. Elle propose des filtres dynamiques, une carte interactive via Google Maps, un système de messagerie, la gestion des annonces et une authentification complète.</p>
               </div>
             </div>
 

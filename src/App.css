@@ -339,6 +339,7 @@ main section {
 .experience-text .subsection-title {
   text-align: left;
   margin-top: 40px;
+  color: #d4d4d4;
 }
 
 .subsection-title--right {
@@ -417,6 +418,7 @@ main section {
   text-align: center;
   width: 100%;
   margin: 0 0 40px;
+  color: #fff;
 }
 
 .about-text p {
