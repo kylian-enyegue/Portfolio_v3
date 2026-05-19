@@ -16,9 +16,9 @@ function Sidebar() {
         <button onClick={() => scrollTo('skills')}><i className="fi fi-ss-user-skill-gear"></i> Skills</button>
         <button onClick={() => scrollTo('projets')}><i className="fi fi-br-diagram-project"></i> Projets</button>
         <button onClick={() => scrollTo('contact')}><i className="fi fi-sr-phone-call"></i> Contact</button>
-        <a className="navbar-btn navbar-btn-mobile-cv" href="/CV.pdf" target="_blank" rel="noopener noreferrer">Mon CV</a>
+        <a className="navbar-btn navbar-btn-mobile-cv" href={`${import.meta.env.BASE_URL}CV.pdf`} target="_blank" rel="noopener noreferrer">Mon CV</a>
       </div>
-      <a className="navbar-btn" href="/CV.pdf" target="_blank" rel="noopener noreferrer">Mon CV</a>
+      <a className="navbar-btn" href={`${import.meta.env.BASE_URL}CV.pdf`} target="_blank" rel="noopener noreferrer">Mon CV</a>
     </nav>
   )
 }

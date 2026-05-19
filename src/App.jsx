@@ -99,7 +99,7 @@ function App() {
             </div>
             <div className="about-logo">
               <img src={isepLogo} alt="ISEP" />
-              <a href="/fiche_formation_isep.pdf" target="_blank" rel="noopener noreferrer" className="experience-link">
+              <a href={`${import.meta.env.BASE_URL}fiche_formation_isep.pdf`} target="_blank" rel="noopener noreferrer" className="experience-link">
                 <i className="fi fi-rr-up-right-from-square"></i> Accéder à la fiche de formation
               </a>
             </div>
