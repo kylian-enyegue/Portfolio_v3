@@ -339,7 +339,7 @@ main section {
 .experience-text .subsection-title {
   text-align: left;
   margin-top: 40px;
-  color: #d4d4d4;
+  color: #a5b4fc;
 }
 
 .subsection-title--right {
@@ -366,6 +366,10 @@ main section {
   width: 100%;
   max-width: 260px;
   object-fit: contain;
+}
+
+.experience-logo-mobile {
+  display: none;
 }
 
 .experience-link {
@@ -676,15 +680,26 @@ main section {
     gap: 24px;
     align-items: flex-start;
   }
-  .experience-logo {
-    width: 100%;
-    align-items: flex-start;
+  .experience-logo-desktop {
+    display: none;
   }
-  .experience-logo img {
+  .experience-logo-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 16px 0;
+  }
+  .experience-logo-mobile img {
     max-width: 160px;
+    object-fit: contain;
   }
   .experience-text {
     width: 100%;
+  }
+  .experience-text .subsection-title {
+    text-align: center;
+    color: #a5b4fc;
   }
 
   .skills-grid {

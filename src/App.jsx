@@ -106,7 +106,7 @@ function App() {
           </div>
 
           <div className="experience-container">
-            <div className="experience-logo">
+            <div className="experience-logo experience-logo-desktop">
               <img src={juniorIsepLogo} alt="Junior ISEP" />
               <a href="https://www.juniorisep.com/" target="_blank" rel="noopener noreferrer" className="experience-link">
                 <i className="fi fi-rr-up-right-from-square"></i> Accéder à la page présentation JE
@@ -114,6 +114,12 @@ function App() {
             </div>
             <div className="experience-text">
               <h2 className="subsection-title">Expérience</h2>
+              <div className="experience-logo-mobile">
+                <img src={juniorIsepLogo} alt="Junior ISEP" />
+                <a href="https://www.juniorisep.com/" target="_blank" rel="noopener noreferrer" className="experience-link">
+                  <i className="fi fi-rr-up-right-from-square"></i> Accéder à la page présentation JE
+                </a>
+              </div>
               <p>Junior ISEP est la junior-entreprise de l'ISEP, classée parmi les meilleures de France, qui réalise des prestations numériques sur mesure pour des entreprises clientes.</p>
               <p>En tant que Responsable Technique en formation, j'ai l'opportunité de mettre en pratique les bonnes pratiques du développement logiciel telles que la conteneurisation avec Docker, la peer review de code et la gestion de dépôts GitLab.</p>
               <p>Je participe également à la supervision de l'infrastructure réseau de la structure, incluant des serveurs, machines virtuelles et conteneurs LXC via Proxmox, utilisés pour le développement, les tests et le déploiement des missions clients. Je contribue aussi à la configuration de reverse proxies, au monitoring via Grafana et à la sécurisation des accès avec WireGuard.</p>
@@ -122,18 +128,21 @@ function App() {
           </div>
 
           <div className="experience-container">
-            <div className="experience-logo">
+            <div className="experience-logo experience-logo-desktop">
               <img src={garageIsepLogo} alt="GarageISEP" style={{ marginTop: '75px' }} />
             </div>
             <div className="experience-text">
               <h2 className="subsection-title">Engagement associatif</h2>
+              <div className="experience-logo-mobile">
+                <img src={garageIsepLogo} alt="GarageISEP" />
+              </div>
               <p>Je suis membre du CyberLab, un pôle de l'association GarageISEP. Au sein de ce groupe, je participe à des Capture The Flag et m'entraîne sur la plateforme TryHackMe pour développer progressivement mes compétences en cybersécurité. Je pratique le pentest sur des terminaux et des machines virtuelles tout en approfondissant mes connaissances des commandes Linux sur Kali.</p>
             </div>
           </div>
         </section>
         <section id="skills">
           <h1 className="section-title">Skills</h1>
-          <h2 className="subsection-title subsection-title--right">Langages que je maîtrise</h2>
+          <h2 className="subsection-title subsection-title--right">Langages que je maîtrise :</h2>
           <div className="skills-grid">
             {skills.map((skill) => (
               <div className="skill-card" key={skill.name}>
@@ -143,7 +152,7 @@ function App() {
             ))}
           </div>
 
-          <h2 className="subsection-title">Outils Devops, Virtualisation, automatisation et Systèmes réseaux</h2>
+          <h2 className="subsection-title">Outils Devops, Virtualisation, automatisation et Systèmes réseaux utilisés :</h2>
           <div className="outils-marquee">
             <div className="outils-track">
               {[...outils, ...outils].map((outil, i) => (
