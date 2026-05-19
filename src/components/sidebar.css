@@ -117,3 +117,31 @@
 .navbar-btn-logout:hover {
   opacity: 0.85;
 }
+
+/* ── MOBILE (≤768px) ── */
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 10px 16px;
+    gap: 8px;
+  }
+  .navbar-ke-logo {
+    height: 32px;
+  }
+  .navbar-links {
+    order: 3;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+  .navbar-links a,
+  .navbar-links button {
+    font-size: 13px;
+    padding: 6px 10px;
+  }
+  .navbar-btn {
+    font-size: 13px;
+    padding: 6px 12px;
+  }
+}
