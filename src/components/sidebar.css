@@ -16,6 +16,20 @@
   flex-shrink: 0;
 }
 
+.navbar-ke-logo {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+  margin-right: 16px;
+  flex-shrink: 0;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.navbar-ke-logo:hover {
+  transform: scale(1.2);
+}
+
 .navbar-logo {
   height: 150px;
   width: auto;
@@ -58,18 +72,20 @@
 }
 
 .navbar-btn {
-  background: #FF3958;
+  background: #1e3a8a;
   border: none;
   color: #fff;
   padding: 6px 14px;
   border-radius: 8px;
   font-size: 15px;
   cursor: pointer;
+  font-family: inherit;
+  text-decoration: none;
   transition: opacity 0.2s, transform 0.2s;
 }
 
 .navbar-btn:hover {
-  opacity: 0.85;
+  background: #1e2f6e;
   transform: scale(1.08);
 }
 
